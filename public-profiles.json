@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_at": 1762533713661,
+  "updated_at": 1762542100310,
   "profiles": [
     {
       "id": "96c3e6ca-3da9-4687-bd99-bd7999a9dece",
@@ -80,6 +80,47 @@
       "version": "1.0.0",
       "created_at": 1762535454599,
       "updated_at": 1762535454599
+    },
+    {
+      "id": "3d94b3f2-628b-4022-aaef-178d311871ba",
+      "name": "scrapethissite test",
+      "createdAt": 1762541997566,
+      "updatedAt": 1762541997566,
+      "categoryUrl": "https://www.scrapethissite.com/pages/",
+      "preActions": [],
+      "pagination": {
+        "type": "infinite",
+        "selector": "",
+        "maxPages": 10
+      },
+      "productLinkSelector": ".page-title a",
+      "prependDomain": true,
+      "productPageActions": [],
+      "fieldSelectors": {
+        "countryName": ".country-name",
+        "population": ".country-info .country-population",
+        "pageTitle": ".container h1"
+      },
+      "concurrency": 3,
+      "delayRange": [
+        2000,
+        4000
+      ],
+      "retries": 3,
+      "checkpointInterval": 10,
+      "headless": true,
+      "overwriteExisting": false,
+      "isPublic": true,
+      "isReadonly": true,
+      "author": "rhon3n",
+      "description": "test scraper website",
+      "tags": [
+        "testing"
+      ],
+      "version": "1.0.0",
+      "inLibrary": true,
+      "created_at": 1762542100310,
+      "updated_at": 1762542100310
     }
   ]
 }
