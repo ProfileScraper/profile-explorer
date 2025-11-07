@@ -1,5 +1,45 @@
 {
   "version": "1.0.0",
-  "updated_at": 1699564800000,
-  "profiles": []
+  "updated_at": 1762533713661,
+  "profiles": [
+    {
+      "id": "96c3e6ca-3da9-4687-bd99-bd7999a9dece",
+      "name": "bh-test-import",
+      "createdAt": 1762530494755,
+      "updatedAt": 1762530515389,
+      "categoryUrl": "https://www.bhphotovideo.com/c/buy/light-panels/ci/48383",
+      "preActions": [],
+      "pagination": {
+        "type": "button",
+        "selector": "[data-selenium=\"listingPagingPageNext\"]",
+        "maxPages": 1
+      },
+      "productLinkSelector": "[data-selenium=\"miniProductPage\"] a[class^=\"title\"]",
+      "prependDomain": true,
+      "productPageActions": [],
+      "fieldSelectors": {
+        "prodTitle": "[data-selenium=\"productTitle\"]",
+        "photometrics": "tr:has-text(\"Photometrics\") td span"
+      },
+      "concurrency": 3,
+      "delayRange": [
+        2000,
+        4000
+      ],
+      "retries": 3,
+      "checkpointInterval": 10,
+      "headless": true,
+      "overwriteExisting": false,
+      "isPublic": true,
+      "isReadonly": true,
+      "author": "rhon3n",
+      "description": "bh test profile",
+      "tags": [
+        "test"
+      ],
+      "version": "1.0.0",
+      "created_at": 1762533713661,
+      "updated_at": 1762533713661
+    }
+  ]
 }
